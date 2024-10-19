@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container"onclick="getWeather(event)">
+
+
+        <!-- left side -->
+
+        <div class="left_bar">
+            <h2 style="margin-top: 10px; text-align: center;">Weather</h1>
+            <div class="search_box">
+                <input id="search" type="text" placeholder="search your place">
+                <button id="search_button" onclick="getWeather(event)">search</button>
+            </div>
+
+            <div class="weather_image">
+                <img id="image" src="image.png" alt="">
+            </div>
+
+            <div class="temprature">
+
+                <h3 class="left_text" id="temp">34°C</h3>
+                <h6 class="left_text" id="feels_like">Feels like 34°C </h5>
+                <h6 class="left_text" id="date_time">Wednesday,October 16 at <span id="current_time">11:32</span></h6>
+                <h6 class="left_text" id="city_name">Bengalure,<span id="country_code">IN</span></h6>
+            </div>
+            
+        </div>
+
+        <!-- right side -->
+
+        <div class="right_bar">
+            <h3 style="font-weight: 400;" id="todays_forecast">Todays Forecasts</h3>
+            
+            <select name="" id="forecast_dropdown" style="display: none;">
+                <option value="todays" selected>Todays Forecast</option>
+                <option value="four_days">4 Days Forecasts</option>
+            </select>
+           
+            <div class="row1" id="todays_weather">
+
+                <div class="col">
+
+                    <span>Humidity</span>
+                    <i class="fa-solid fa-bars"></i>
+                    <span id="humidity"class="results">36%</span>
+                </div>
+                <div class="col">
+                    
+                    <span>Wind Speed</span>
+
+                    <i class="fa-solid fa-wind" ></i>
+                    <span id="wind"class="results">5km/hr</span>
+                </div>
+                <div class="col">
+                    <span>Sunrise</span>
+                    <i class="fa-solid fa-sun"></i>
+                    <span id="sunrise"class="results">6:04 Am</span>
+                </div>
+                <div class="col">
+                    <span>Clouds</span>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="cloud"class="results">20%</span>
+                </div>
+                <div class="col">
+                    <span>UV Index</span>
+                    <i class="fa-solid fa-bacon"></i>
+                    <span id="uv"class="results">8.35</span>
+                </div>
+                <div class="col">
+                    <span>Pressure</span>
+                    <i class="fa-solid fa-bacon"></i>
+                    <span id="pressure"class="results">1013hPQ</span>
+                </div>
+
+            </div>
+            
+            <h3 style="font-weight: 400;" id="seven_day">4 Days Forecasts</h3>
+            <div class="row2" id="forecast">
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
