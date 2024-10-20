@@ -88,14 +88,14 @@ function displayForecast(data) {
 
     dailyForecasts.forEach(forecast => {
         const date = new Date(forecast.dt * 1000).toLocaleDateString('en-US', {
-            weekday: 'long',
-            month: 'long',
+            weekday: 'short',
+            month: 'short',
             day: 'numeric'
         });
         const roundedTemp = Math.round(forecast.main.temp);
         const weatherIcon = forecast.weather[0].icon;
         const weatherDescription = forecast.weather[0].description;
-
+        
         // Create forecast card
         const forecastCard = document.createElement('div');
         forecastCard.classList.add('forecast-card');
@@ -109,17 +109,6 @@ function displayForecast(data) {
     });
 }
 
-// function toggleDropdown() {
-//     const dropdown = document.getElementById('forecast_dropdown');
-//     if (window.innerWidth < 600) {
-//         dropdown.style.display = 'block'; 
-//     } else {
-//         dropdown.style.display = 'none'; 
-//     }
-// }
-
-
-// toggleDropdown();
 
 
 // window.addEventListener('resize', toggleDropdown);

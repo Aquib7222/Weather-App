@@ -17,12 +17,12 @@
         <div class="left_bar">
             <h2 style="margin-top: 10px; text-align: center;">Weather</h1>
             <div class="search_box">
-                <input id="search" type="text" placeholder="search your place">
+                <input id="search" type="text" placeholder="City Eg:Delhi,Patna">
                 <button id="search_button" onclick="getWeather(event)">search</button>
             </div>
 
             <div class="weather_image">
-                <img id="image" src="image.png" alt="">
+                <img id="image" src="cloudy (1).png" alt="">
             </div>
 
             <div class="temprature">
@@ -49,34 +49,34 @@
 
                 <div class="col">
 
-                    <span>Humidity</span>
+                    <span   class="header_name">Humidity</span>
                     <i class="fa-solid fa-bars"></i>
                     <span id="humidity"class="results">36%</span>
                 </div>
                 <div class="col">
                     
-                    <span>Wind Speed</span>
+                    <span  class="header_name">Wind Speed</span>
 
                     <i class="fa-solid fa-wind" ></i>
                     <span id="wind"class="results">5km/hr</span>
                 </div>
                 <div class="col">
-                    <span>Sunrise</span>
+                    <span class="header_name">Sunrise</span>
                     <i class="fa-solid fa-sun"></i>
                     <span id="sunrise"class="results">6:04 Am</span>
                 </div>
                 <div class="col">
-                    <span>Clouds</span>
+                    <span class="header_name">Clouds</span>
                     <i class="fa-solid fa-cloud"></i>
                     <span id="cloud"class="results">20%</span>
                 </div>
                 <div class="col">
-                    <span>UV Index</span>
+                    <span class="header_name">UV Index</span>
                     <i class="fa-solid fa-bacon"></i>
                     <span id="uv"class="results">8.35</span>
                 </div>
                 <div class="col">
-                    <span>Pressure</span>
+                    <span  class="header_name">Pressure</span>
                     <i class="fa-solid fa-bacon"></i>
                     <span id="pressure"class="results">1013hPQ</span>
                 </div>
@@ -85,7 +85,31 @@
             
             <h3 style="font-weight: 400;" id="seven_day">4 Days Forecasts</h3>
             <div class="row2" id="forecast">
-               
+               <div class="forecast-card" id="forecast1">
+                <h5 id="daily_date">Sun,Oct 20</h5>
+                <img src="cloudy.png" alt="" id="image_forecast">
+                <p id="temp_forecast">25°C</p>
+                <p id="weather_condition">clear sky</p>
+
+               </div>
+               <div class="forecast-card"id="forecast2">
+                    <h5 id="daily_date">Sun,Oct 20</h5>
+                    <img src="cloudy.png" alt="" id="image_forecast">
+                    <p id="temp_forecast">25°C</p>
+                    <p id="weather_condition">clear sky</p>
+               </div>
+               <div class="forecast-card"id="forecast3">
+                    <h5 id="daily_date">Sun,Oct 20</h5>
+                    <img src="cloudy.png" alt="" id="image_forecast">
+                    <p id="temp_forecast">25°C</p>
+                    <p id="weather_condition">clear sky</p>
+               </div>
+               <div class="forecast-card"id="forecast4">
+                    <h5 id="daily_date">Sun,Oct 20</h5>
+                    <img src="cloudy.png" alt="" id="image_forecast">
+                    <p id="temp_forecast">25°C</p>
+                    <p id="weather_condition">clear sky</p>
+               </div>
             </div>
         </div>
     </div>
