@@ -182,7 +182,7 @@ body{
 }
 .forecast-card{
     
-    height: 50%;
+    height: 60%;
     width: 15%;
     transition: .2s ease-in-out 0s;
     cursor: pointer;
@@ -194,8 +194,8 @@ body{
     font-size: 15px;
 }
 .forecast-card img{
-    height: 45px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 }
 /* #image_forecast{
     height: 15px;
@@ -207,6 +207,7 @@ body{
 }
 #weather_condition ,#temp_forecast{
     font-size: 10px;
+    margin-top: 10px;
 }
 @media(max-width:810px) and (min-width:600px){
     .col{
@@ -261,7 +262,8 @@ body{
         height: 40vh;
     }
     #image{
-        width: 50px;
+        width: 40px;
+        height: 30px;
         margin-top: 0px;
     }
     .temprature{
@@ -303,8 +305,8 @@ body{
         display: none;
     }
     .forecast-card{
-        width: 40%;
-        height: 180px;
+        width: 35%;
+        height: 150px;
         font-size: 20px;
     }
     .forecast-card img{
@@ -335,7 +337,7 @@ body{
     }
     .container{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: block;
         background-color: rgb(222, 250, 245);
         border-radius: 0px;
@@ -361,10 +363,11 @@ body{
         flex-wrap: wrap;
     }
     .col{
-        width: 32%;
-        height: 27%;
+        width: 30%;
+        height: 25%;
         padding: 10px;
         margin: 10px;
+        font-size: 15px;
     }
     .header_name{
         font-size: 12px;
@@ -392,10 +395,10 @@ body{
         display: none;
     }
     .forecast-card{
-        width: 35%;
-        height: 120px;
-        font-size: 15px;
-        padding: 14px;
+        width: 30%;
+        height: 30%;
+        /* font-size: 15px; */
+        padding: 17px;
     }
     .forecast-card img{
         height: 50%;
@@ -404,7 +407,7 @@ body{
     }
     
     .forecast-card p{
-        font-size: 15px;
+        font-size: 15px !important;
     }
 
 }
